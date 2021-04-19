@@ -54,7 +54,7 @@ img {
 
 .card-container {
 	display: flex;
-	margin: auto 1em;
+	margin: auto;
 	flex-direction: column;
 	background-color: hsl(244, 38%, 16%);
 	border-radius: 8px;
