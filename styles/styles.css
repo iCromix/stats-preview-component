@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+
+	width: 100vw;
+	height: 100vh;
+
+	background-color: hsl(233, 47%, 7%);
+	text-align: center;
+	font-size: 15px;
+}
+
+	/* Typography  */
+
+h1 {
+	font-family: Inter, sans-serif;
+	color: hsl(0, 0%, 100%);
+}
+
+p {
+	font-family: Inter, sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 1.7;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	mix-blend-mode: multiply;
+}
+
+.accent {
+	color: hsl(277, 64%, 61%);
+}
+
+.card-stats h2 {
+	font-family: 'Inter', sans-serif;
+	color: hsl(0, 0%, 100%);
+	margin-bottom: 0;
+}
+
+.card-stats p {
+	font-family: 'Inter', sans-serif;
+	color: hsla(0, 0%, 100%, 0.6);
+	text-transform: uppercase;
+	letter-spacing: .3px;
+	margin-top: 0;
+}
+
+	/* Card  */
+
+.card-container {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 8px;
+
+	max-width: 375px;
+}
+
+.card-body {
+	padding: .9em 1.75em;
+}
+
+.card-image-container {
+	border-radius: 8px 8px 0 0;
+	background-color: rgba(162, 88, 209, 1);
+}
+
+.card-image-desktop,
+.card-image-mobile {
+	object-fit: cover;
+}
+
+.card-image-desktop {
+	display: none;
+}
+
+.card-image-mobile {
+}
+
+.card-stats-container {
+	display: flex;
+}
+
+/* Card Stats  */
+
+.card-stats-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+	/* Medias  */
+
+@media (min-width: 1000px) {
+	.card-container {
+		text-align: left;
+		flex-direction: row;
+		max-width: 1000px;
+	}
+
+	.card-image-container {
+		order: 2;
+		width: 50%;
+		background-color: rgba(162, 88, 209, 1);
+		border-radius: 0 8px 8px 0;
+	}
+
+	.card-image-mobile {
+		display: none;
+	}
+
+	.card-image-desktop {
+		display: block;
+		object-fit: cover;
+		order: 2;
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-body {
+		height: 100%;
+		width: 50%;
+		padding: 3em 4em;
+	}
+
+	.card-stats-container {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 8em;
+	}
+}
+
+/* Extra */
+.attribution {
+	bottom: 0;
+	position: absolute;
+	margin-top: 1em;
+	color: white;
+}
