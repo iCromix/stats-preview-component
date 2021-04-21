@@ -3,82 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-  <!-- Google Fonts -->
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <!-- Google Fonts  -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { color: hsl(240, 6%, 50%); border-radius: 25px; padding: 1em; margin-top: 1em; font-size: 15px; text-align: center; background-color: #fff; }
-    .attribution a { color: hsl(273, 75%, 66%); }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <div class="card">
+  <div class="card-container">
     <div class="card-image-container">
-      <img class="card-image" src="./images/illustration-woman-online-mobile.svg" alt="a woman looking at a screen">
-      <img class="box-image" src="./images/illustration-box-desktop.svg" alt="a box with an @ sign">
+      <img src="./images/image-header-mobile.jpg" alt="girls sitted around a table using laptops." class="card-image-mobile">
+      <img src="./images/image-header-desktop.jpg" alt="girls sitted around a table using laptops." class="card-image-desktop">
     </div>
     <div class="card-body">
-      <h1>FAQ</h1>
-      <div id="accordion">
-        <div class="accordion-item" id="item1">
-          <a class="accordion-link" href="#item1">How many team members can I invite?<img class="arrow-icon" src="./images/icon-arrow-down.svg" width="24" height="16" alt="down arrow"></a>
-          <div class="accordion-content">
-            <p>
-              You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-            </p>
-          </div>
+      <h1>
+        Get <span class="accent">insights</span> that help your business grow.
+      </h1>
+      <p>
+      Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.
+      </p>
+      <div class="card-stats-container">
+        <div class="card-stats">
+          <h2>10k+</h2> 
+          <p>companies</p>
         </div>
-
-        <div class="accordion-item" id="item2">
-          <a class="accordion-link" href="#item2">What is the maximum file upload size?<img class="arrow-icon" src="./images/icon-arrow-down.svg" width="24" height="16" alt="down arrow"></a>
-          <div class="accordion-content">
-            <p>
-              No more than 2GB. All files in your account must fit your allotted storage space.
-            </p>
-          </div>
+        <div class="card-stats">
+          <h2>314</h2> 
+          <p>templates</p>
         </div>
-
-        <div class="accordion-item" id="item3">
-          <a class="accordion-link" href="#item3">How do I reset my password?<img class="arrow-icon" src="./images/icon-arrow-down.svg" width="24" height="16" alt="down arrow"></a>
-          <div class="accordion-content">
-            <p>
-              Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion-item" id="item4">
-          <a class="accordion-link" href="#item4">Can I cancel my subscription?<img class="arrow-icon" src="./images/icon-arrow-down.svg" width="24" height="16" alt="down arrow"></a>
-          <div class="accordion-content">
-            <p>
-              Yes! Send us a message and we’ll process your request no questions asked.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion-item" id="item5">
-          <a class="accordion-link item1" href="#item5">Do you provide additional support?<img class="arrow-icon" src="./images/icon-arrow-down.svg" width="24" height="16" alt="down arrow"></a>
-          <div class="accordion-content">
-            <p>
-              Chat and email support is available 24/7. Phone lines are open during normal business hours.
-            </p>
-          </div>
+        <div class="card-stats">
+          <h2>12M+</h2> 
+          <p>queries</p>
         </div>
       </div>
     </div>
-    
   </div>
  
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/iCromix">iCromix</a>.
+    Coded by <a href="https://github.com/iCromix">Cromix</a>.
   </div>
 </body>
 </html>
